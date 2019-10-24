@@ -57,7 +57,9 @@ function StepThree({ prevStep, nextStep, details, dob }) {
                 <p>Please make sure the below details are correct:</p>
                 <ul>
                     <li>Full Name: {fullName}</li>
-                    <li>Phone Number: {phoneNumber}</li>
+                    {phoneNumber.length > 1 ? (
+                        <li>Phone Number: {phoneNumber}</li>
+                    ) : null}
                     <li>Email Address: {emailAddress}</li>
                     <li>Date Of Birth: {`${day}/${month}/${year}`}</li>
                 </ul>
