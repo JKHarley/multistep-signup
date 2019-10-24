@@ -37,6 +37,9 @@ function StepOne({ nextStep, handleChange, details, handleRequired }) {
                     value={phoneNumber}
                     maxLength='20'
                 />
+                {phoneNumber.match(/[a-z]/i) ? (
+                    <Error>Please enter a valid number</Error>
+                ) : null}
             </InputContain>
             <ButtonComp
                 onClick={nextStage}
@@ -45,7 +48,7 @@ function StepOne({ nextStep, handleChange, details, handleRequired }) {
                 backgroundColor={COLORS.primary}
                 color='#fff'
                 type='submit'
-                disabled={fullName.length < 1}
+                disabled={fullName.length < 1 || phoneNumber.match(/[a-z]/i)}
             />
         </React.Fragment>
     );
