@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { lighten } from 'polished';
+
 import { COLORS } from '../../GlobalVars';
 
 const ButtonComp = styled.button`

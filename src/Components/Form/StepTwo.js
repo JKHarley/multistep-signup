@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import Input, { InputContain } from '../Input/Input';
 import ButtonComp from '../Button/Button';
 import { COLORS } from '../../GlobalVars';
 import Error from './Error';
-import styled from 'styled-components';
-
-import PropTypes from 'prop-types';
 
 const DobContain = styled.div`
     width: 100%;

@@ -1,7 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import ButtonComp from '../Button/Button';
 import { COLORS } from '../../GlobalVars';
-import styled from 'styled-components';
 
 const Details = styled.div`
     width: 100%;
@@ -14,7 +15,7 @@ const Details = styled.div`
         font-family: 'Roboto';
         font-size: 1.8rem;
         margin-bottom: 2rem;
-        
+
         @media (max-width: 640px) {
             font-size: 1.6rem;
         }
