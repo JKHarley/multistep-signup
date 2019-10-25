@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { lighten } from 'polished';
 
 import { COLORS } from '../../GlobalVars';
 
@@ -22,8 +21,8 @@ const ButtonComp = styled.button`
     }
 
     &:disabled {
-        background: ${props =>
-            props.backgroundColor && lighten(0.2, props.backgroundColor)};
+        background: ${props => props.backgroundColor};
+        opacity: 0.2;
     }
 
     &:hover {
